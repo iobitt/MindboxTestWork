@@ -10,8 +10,8 @@ Name nchar(20)
 
 ProductCategories:
 Id int,
-ProductId,
-CategoryId
+ProductId int,
+CategoryId int
 
 Запрос
 SELECT Products.Name, Сategories.Name
