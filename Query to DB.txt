@@ -1,0 +1,20 @@
+Описание таблиц
+
+Products:
+Id int,
+Name nchar(20)
+
+Categories:
+Id int,
+Name nchar(20)
+
+ProductCategories:
+Id int,
+ProductId,
+CategoryId
+
+Запрос
+SELECT Products.Name, Сategories.Name
+FROM Products
+LEFT JOIN BookCategories ON Products.Id = ProductCategories.ProductId
+LEFT JOIN Сategories ON Сategories.Id = ProductCategories.CategoryId
